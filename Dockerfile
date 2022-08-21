@@ -5,6 +5,6 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/so
 RUN sudo apt update -y \
   && sudo apt install yarn -y \
   && sudo rm -rf /var/lib/apt/lists/*
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-RUN unzip awscliv2.zip
-RUN sudo ./aws/install
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/opt/awscliv2.zip"
+RUN unzip /opt/awscliv2.zip -d /opt/
+RUN sudo /opt/aws/install
