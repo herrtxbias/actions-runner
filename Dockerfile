@@ -1,4 +1,4 @@
-FROM summerwind/actions-runner:latest
+FROM ghcr.io/actions/actions-runner:latest
 
 RUN sudo apt-get install gcc g++ make
 #RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
