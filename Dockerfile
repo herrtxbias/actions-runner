@@ -3,7 +3,7 @@ FROM ghcr.io/actions/actions-runner:latest
 RUN sudo apt update -y
 
 # Misc
-RUN sudo apt-get install -y gcc g++ make apt-transport-https curl gnupg unzip git jq
+RUN sudo apt-get install -y gcc g++ make apt-transport-https curl gnupg unzip git jq ssh
 
 # yarn
 RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
